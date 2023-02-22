@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+/*#################### ASSETS ####################*/
+
+.margin-top-50{
+    margin-top: 50px;
+}
+
+.margin-top-100{
+    margin-top: 100px;
+}
+
+.margin-bottom-50{
+    margin-bottom: 50px;
+}
+
+.margin-bottom-100{
+    margin-bottom: 100px;
+}
+
+/*#################### END ASSETS ####################*/
+
+.main-header{
+    width: 100%;
+    padding: 15px 80px;
+    display: flex;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+.logo{
+    width: 23%;
+}
+
+.logo a{
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #1087ff;
+}
+
+.search{
+    width: 50%;
+}
+
+.search form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.search form input{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    color: #363636;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.search form button{
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-search span{
+    font-size: 1.9em;
+    color: #ccc;
+}
+
+.main-nav{
+    width: calc(100% - 73%);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-ul{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.main-ul li{
+    margin: 0 10px;
+    position: relative;
+}
+
+.main-ul li a{
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #363636;
+    display: flex;
+    align-items: center;
+}
+
+.main-ul li a:hover{
+    color: #1087ff;
+}
+
+.main-ul li a span{
+    margin-left: 5px;
+    font-size: 1em;
+}
+
+.main-ul-categories{
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    width: 170px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 0;
+    display: none;
+    transition: all .3s ease;
+}
+
+.open-submenu:hover .main-ul-categories{
+    display: block;
+    transition: all .3s ease;
+}
+
+/*#################### END HEADER ####################*/
+
+
+.main-container{
+    width: 100%;
+    padding: 0 15px;
+    display: block;
+}
+
+ .content{
+    width: 90%;
+    margin: 0 auto;
+}
+
+ .content-header{
+    width: 100%;
+    padding: 15px 0;
+    margin: 50px 0;
+}
+
+.content-header h1{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #363636;
+}
+
+.content-header span{
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #363636;
+    display: block;
+    width: 100%;
+}
+
+.content-header span strong{
+    font-weight: 600;
+}
+
+.row-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box-hilight{
+    width: 65%;
+    padding-right: 20px;
+}
+
+.box-hilight img{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.box-hilight span{
+    color: #1087ff;
+    margin: 15px 0;
+}
+
+.box-hilight h2{
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #000;
+    font-weight: 600;
+}
+
+.box-bloco{
+    width: 35%;
+}
+
+.box-list-post a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.box-list-post a h2:hover{
+    color: #1087ff;
+}
+
+.box-list-post img{
+    width: 164px;
+    height: 118px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.box-list-post h2{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #000;
+}
+/*#################### END MAIN ####################*/
+
+
+.title-header-right{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.text-content{
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #363636;
+    line-height: 1.5;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.author img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 0;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+}
+
+.author p{
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #1087ff;
+    margin-bottom: 0;
+}
+
+.author b{
+    margin-left: 40px;
+    font-weight: 600;
+    color: #363636;
+}
+
+/*#################### END INTERNA ####################*/
+
+
+.row-login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1087ff;
+}
+
+
+.box-login{
+    width: 400px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.4);
+}
+
+
+.box-login h1{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #363636;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box-login form{
+    width: 100%;
+    padding: 20px;
+}
+
+
+.box-login form input{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    color: #363636;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.box-login form button{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+    background: #1087ff;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.register{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    color: #363636;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.alert span{
+    margin-right: 10px;
+}
+
+.alert.alert-danger{
+    background: #ff0000;
+    color: #fff;
+}
+
+.alert.alert-success{
+    background: #1ef554;
+    color: #fff;
+}
+
+.alert.alert-alert{
+    background: #fde50f;
+    color: #fff;
+    border: 1px solid #fde50f;
+}
+
+.w-100{
+    width: 100% !important;
+}
+
+/*#################### END LOGIN ####################*/
+
+.footer{
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+.footer p{
+    font-size: 1em;
+    font-weight: 400;
+    color: #363636;
+    text-align: center;
+}

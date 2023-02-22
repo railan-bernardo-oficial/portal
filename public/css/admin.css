@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+.main-header{
+    width: 100%;
+    padding: 15px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background: #fff;
+}
+
+.main-content{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-flex-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-logo a{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #000;
+}
+
+.main-perfil{
+    position: relative;
+}
+
+.main-perfil a{
+    font-size: 1em;
+    font-weight: 600;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.main-perfil a img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.main-box-perfil{
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 25px 0;
+    display: none;
+    transition: all .3s ease;
+
+}
+
+.main-box-perfil a{
+  padding: 8px 15px;
+  transition: all .3s ease;
+}
+
+.main-box-perfil a:hover{
+    background: #1087ff;
+    color: #fff;
+}
+
+.main-perfil:hover .main-box-perfil{
+    display: block;
+    transition: all .3s ease;
+}
+
+/*#################### END HEADER ####################*/
+
+.main-nav-left{
+    width: 270px;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    background: #1087ff;
+}
+
+.content-nav{
+    width: 100%;
+    padding: 40px 0;
+}
+
+.content-nav ul li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content-nav ul li a{
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.content-nav ul li a:hover{
+    background: #fff;
+    color: #1087ff;
+}
+
+.content-nav ul li a span{
+    margin-right: 6px;
+}
+
+/*#################### END NAV ####################*/
+
+
+.row-content{
+    width: (100% - 285px);
+    min-height: 75vh;
+    margin-left: 285px;
+    padding: 40px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+/*#################### END CONTENT ####################*/
+
+
+.box-form{
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.box-form h1{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #363636;
+    margin-bottom: 20px;
+}
+
+.box-form form{
+    width: 40%;
+}
+
+
+.box-form form input,
+.box-form form select,
+.box-form form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.box-form form textarea{
+    min-height: 250px;
+}
+
+.box-form form .btn-submit{
+    background: #1087ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.foto img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.status{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.status input{
+    margin-right: 5px;
+    margin-left: 15px;
+    margin-bottom: 0 !important;
+    width: auto !important;
+}
+
+.table-header{
+    display: grid;
+    border-bottom: 1px solid #ccc;
+}
+
+.temp-col-4{
+    grid-template-columns: repeat(4, 1fr);
+}
+.temp-col-5{
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.table-header .table-header-th{
+    width: 100%;
+    padding: 8px 15px;
+}
+
+
+.table-body-tr{
+    display: grid;
+    margin-top: 8px;
+}
+
+.table-body-tr .table-body-td{
+    width: 100%;
+    padding: 8px 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.table-body-td.td-flex{
+    display: flex;
+    align-items: center;
+}
+
+.table-body-td img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn.btn-edit{
+    background: #1087ff;
+    color: #fff;
+    margin-right: 6px;
+}
+
+.btn.btn-delete{
+    background: #ff0000;
+    color: #fff;
+}
+
+.add{
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.add a{
+    color: #1087ff;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+}
+
+.add a span{
+    margin-right: 6px;
+}
+
+.row-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.card{
+    width: 300px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+.card h2{
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #1087ff;
+    margin-bottom: 10px;
+}
+
+.card span{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #363636;
+    margin-bottom: 10px;
+}
+
+/*#################### END PAGES ####################*/
+
+
+.alert{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    color: #363636;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.alert span{
+    margin-right: 10px;
+}
+
+.alert.alert-danger{
+    background: #ff0000;
+    color: #fff;
+}
+
+.alert.alert-success{
+    background: #1ef554;
+    color: #fff;
+}
+
+.alert.alert-alert{
+    background: #fde50f;
+    color: #fff;
+    border: 1px solid #fde50f;
+}
+
+
+
+.main-footer{
+    width: 100%;
+    padding: 15px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    background: #fff;
+    text-align: center;
+}
+
+.main-footer p{
+    font-size: 1em;
+    font-weight: 600;
+    color: #363636;
+}
